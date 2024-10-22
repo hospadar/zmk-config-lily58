@@ -12,6 +12,7 @@
         reg = <0>;
         width = <160>;
         height = <68>;
+        cs-gpios = <&pro_micro 4 GPIO_ACTIVE_HIGH>;
     };
 };
 
