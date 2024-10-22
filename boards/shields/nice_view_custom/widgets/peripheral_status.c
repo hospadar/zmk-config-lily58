@@ -35,6 +35,17 @@ LV_IMG_DECLARE(corro09);
 LV_IMG_DECLARE(corro10);
 LV_IMG_DECLARE(corro11);
 LV_IMG_DECLARE(corro12);
+LV_IMG_DECLARE(natalie_kiss_01);
+LV_IMG_DECLARE(natalie_kiss_02);
+LV_IMG_DECLARE(natalie_kiss_03);
+LV_IMG_DECLARE(natalie_kiss_04);
+
+const lv_img_dsc_t *natalie_kiss_anim[] = {
+    &natalie_kiss_01,
+    &natalie_kiss_02,
+    &natalie_kiss_03,
+    &natalie_kiss_04
+}
 
 const lv_img_dsc_t *anim_imgs[] = {
     &corro01,
@@ -146,7 +157,7 @@ int zmk_widget_status_init(struct zmk_widget_status *widget, lv_obj_t *parent) {
 
     lv_obj_t * art = lv_animimg_create(widget->obj);            //<--
     lv_obj_center(art);                                         //<--
-    lv_animimg_set_src(art, (const void **) anim_imgs, 12);     //<--
+    lv_animimg_set_src(art, (const void **) natalie_kiss_anim, 12);     //<--
     lv_animimg_set_duration(art, CONFIG_CUSTOM_ANIMATION_SPEED);//<--
     lv_animimg_set_repeat_count(art, LV_ANIM_REPEAT_INFINITE);  //<--
     lv_animimg_start(art);                                      //<--
