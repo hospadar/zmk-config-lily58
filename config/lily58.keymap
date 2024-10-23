@@ -10,26 +10,6 @@
 #include <dt-bindings/zmk/ext_power.h>
 
 / {
-    left_encoder: encoder_left {
-        steps = <18>
-    }
-
-    right_encoder: encoder_right {
-        compatible = "alps,ec11";
-        a-gpios = <&pro_micro 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-        b-gpios = <&pro_micro 21 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-        steps = <18>;
-        status = "ok";
-    };
-
-    sensors: sensors {
-        compatible = "zmk,keymap-sensors";
-        sensors = <&left_encoder &right_encoder>;
-        triggers-per-rotation = <18>;
-    };
-}
-
-/ {
 
     keymap {
         compatible = "zmk,keymap";
@@ -87,5 +67,23 @@
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN A B>;
         };
+    };
+
+    &left_encoder {
+           steps = <18>
+    }
+
+    right_encoder: encoder_right {
+        compatible = "alps,ec11";
+        a-gpios = <&pro_micro 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        b-gpios = <&pro_micro 21 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        steps = <18>;
+        status = "ok";
+    };
+
+    &sensors{
+        compatible = "zmk,keymap-sensors";
+        sensors = <&left_encoder &right_encoder>;
+        triggers-per-rotation = <18>;
     };
 };
