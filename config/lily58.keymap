@@ -10,7 +10,6 @@
 #include <dt-bindings/zmk/ext_power.h>
 
 / {
-
     left_encoder: encoder_left {
         steps = <18>
     }
@@ -28,6 +27,9 @@
         sensors = <&left_encoder &right_encoder>;
         triggers-per-rotation = <18>;
     };
+}
+
+/ {
 
     keymap {
         compatible = "zmk,keymap";
