@@ -14,7 +14,7 @@
 };
 
 &left_encoder {
-        steps = <18>
+        steps = <18>;
 };
 
 &sensors{
