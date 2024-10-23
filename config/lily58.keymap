@@ -10,22 +10,6 @@
 #include <dt-bindings/zmk/ext_power.h>
 
 / {
-  behaviors {
-    // For users who really want to just override a "weak" symbol with their own implementation, this
-    // recreates the "magic keycode" type behavior. This compatible ends up generating a function definition like:
-    // __attribute__((weak)) int zmk_behavior_custom_one(struct driver *dev, u32_t custom_param) {
-    //   return 0;
-    // }
-    // That can just be overridden in the user config code.
-    custom_one: behavior_custom_one {
-      compatible = "zmk,behavior-custom";
-      label = "custom_one";
-      binding-cells = <2>;
-    };
-  };
-};
-
-/ {
     keymap {
         compatible = "zmk,keymap";
 
