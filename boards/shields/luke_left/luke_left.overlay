@@ -13,4 +13,4 @@
         steps = <72>;
         status = "disabled";
     };
-}
+};
