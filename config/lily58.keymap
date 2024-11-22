@@ -177,7 +177,7 @@
 &bt BT_CLR  &bt BT_SEL 0      &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3    &bt BT_SEL 4                                &trans  &trans            &trans             &trans    &trans    &trans
 &trans      &trans            &trans        &trans        &trans          &trans                                      &trans  &trans            &trans             &trans    &trans    &trans
 &trans      &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI  &kp LEFT_SHIFT  &trans                                      &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LPAR  &kp RPAR  &trans
-&trans      &trans            &trans        &trans        &trans          &trans        &kp K_PREVIOUS    &kp K_NEXT  &trans  &trans            &kp LBRC           &kp RBRC  &trans    &trans
+&trans      &kp LG(Z)         &kp LG(X)     &kp LG(C)     &kp LG(V)       &trans        &kp K_PREVIOUS    &kp K_NEXT  &trans  &trans            &kp LBRC           &kp RBRC  &trans    &trans
                                             &trans        &trans          &trans        &kp SPACE         &trans      &trans  &kp UP_ARROW      &kp DOWN
             >;
 
